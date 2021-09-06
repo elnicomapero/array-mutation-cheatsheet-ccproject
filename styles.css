@@ -1,0 +1,98 @@
+body {
+    font-size: 16px;
+    font-family: Georgia;
+    background-image: url(./images/139661_header.jpg);  
+    background-attachment: fixed;
+}
+ 
+h1 {
+    color:lightpink;
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+table {
+    /* This line centers the table */
+    margin: 0 auto 8rem;
+
+    font-family:'Lucida Sans';
+    background-color: blanchedalmond;
+    table-layout: fixed;
+    width: 60%;
+}
+
+table,
+th,
+caption {
+    border-radius: 15px;
+}
+
+caption {
+    caption-side: bottom;
+
+    background-color: burlywood;
+    padding: 0.6rem;
+    
+    font-size: 2rem;
+    font-weight: bold;
+    color:lightgreen;
+}
+
+th[scope="col"] {
+    color:magenta;
+}
+
+th[scope="row"] {
+    font-family:monospace;
+    color: grey; 
+    text-align: left;   
+}
+
+td {
+    color:peru;
+}
+
+td,
+th {
+    border-collapse: separate;
+    border-spacing: 2px;
+    border: 3px solid white;
+    padding: 10px;
+}
+
+.unhighlighted-text {
+    font-size: 1rem;
+}
+
+.success-cell {
+    background-color: seagreen;
+}
+
+.fail-cell {
+    background-color: slategrey;
+}
+
+.methods-col {
+    width: 10%;
+}
+
+.mutating-col,
+.non-mutating-col,
+.callback-mutating-col {
+    width: 7%;
+}
+
+.function-col {
+    width: 20%;
+}
+
+@media screen and (min-width: 1000px)  {
+    body {
+        font-size: 24px;
+    }
+
+    .unhighlighted-text {
+        font-size: 1.4rem;
+    }
+}

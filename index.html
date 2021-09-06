@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Arrays Mutation Cheatsheet</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!-- TO-DO: Add missing descriptions of functionality. Add scrolling. Add ARIA if needed. -->
+</head>
+<body>
+    <header>
+        <h1>JS - Arrays Mutation Cheatsheet</h1>
+    </header>
+    
+    <table>
+        <caption>Which built-in methods mutate the original array and which ones don't?</caption>
+        <colgroup>
+            <col class="methods-col" />
+            <col class="mutating-col" />
+            <col class="non-mutating-col" />
+            <col class="callback-mutating-col" />
+            <col class="function-col" />
+        </colgroup>
+        <tr>
+            <th scope="col">Array Built-in Method</th>
+            <th scope="col">Mutating</th>
+            <th scope="col">Non-mutating</th>
+            <th scope="col">Non-mutating <span class="unhighlighted-text">(but can mutate invoking callback)</span></th>
+            <th scope="col">Functionality</th>
+        </tr>
+        <tr>
+            <th scope="row">copyWithin</th>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td class="fail-cell"></td>
+            <td>Copies one or more of the array's items to a different index.</td>
+        </tr>
+        <tr>
+            <th scope="row">fill</th>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td class="fail-cell"></td>
+            <td>Fills the index/indices specified with the value specified and returns.</td>
+        </tr>
+        <tr>
+            <th scope="row">pop</th>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td class="fail-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">push</th>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td class="fail-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">reverse</th>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td class="fail-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">shift</th>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td class="fail-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">splice</th>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td class="fail-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">unshift</th>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td class="fail-cell"></td>
+            <td></td>
+        </tr>                     
+        <tr>
+            <th scope="row">concat</th>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td>Returns a new array with the merge of two or more arrays.</td>
+        </tr>
+        <tr>
+            <th scope="row">entries</th>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">flat</th>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">from</th>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">includes</th>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">indexOf</th>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">isArray</th>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">join</th>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">keys</th>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">lastIndexOf</th>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">of</th>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">reduce</th>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">reduceRight</th>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">slice</th>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">sort</th>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">toLocaleString</th>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">toString</th>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">values</th>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td class="fail-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">every</th>
+            <td class="fail-cell"></td>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">find</th>
+            <td class="fail-cell"></td>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">flatMap</th>
+            <td class="fail-cell"></td>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">filter</th>
+            <td class="fail-cell"></td>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">findIndex</th>
+            <td class="fail-cell"></td>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">forEach</th>
+            <td class="fail-cell"></td>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">map</th>
+            <td class="fail-cell"></td>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">some</th>
+            <td class="fail-cell"></td>
+            <td class="fail-cell"></td>
+            <td class="success-cell"></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
