@@ -1,0 +1,3 @@
+# JS Array Mutation Cheatsheet
+
+## To mutate or not to mutate, that is indeed the question...
